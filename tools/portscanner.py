@@ -46,7 +46,7 @@ def main():
     if len(args) == 3:
         ip = args[1]
         port = args[2]
-        scan_port(ip, port)
+        scan_port(ip, int(port))
 
     else:
         show_help()
