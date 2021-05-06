@@ -2,22 +2,7 @@
 
 import socket
 import sys
-from colorama import init, Fore
-
-# Colors
-init(autoreset=True)
-
-
-def print_red(statement):
-    print(Fore.RED + statement)
-
-
-def print_green(statement):
-    print(Fore.GREEN + statement)
-
-
-def print_orange(statement):
-    print(Fore.YELLOW + statement)
+from colors import print_green, print_orange, print_red
 
 # Trying to connect with specified port
 
