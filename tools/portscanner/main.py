@@ -1,4 +1,7 @@
-# Basic portscanner
+"""
+Author : No one cares
+Github : You got it from there
+"""
 
 import sys
 from colors import print_green, print_orange, print_red
@@ -11,9 +14,8 @@ def main():
 
     if len(args) == 3:
         ip = args[1]
-        port = args[2]
-        scan(ip, int(port))
-
+        port = int(args[2])
+        scan(ip, port)
     else:
         show_help()
 
