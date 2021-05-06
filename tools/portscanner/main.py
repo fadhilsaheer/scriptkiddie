@@ -3,17 +3,9 @@
 import sys
 from colors import print_green, print_orange, print_red
 from scanner import scan
+from help import show_help
 
 
-# Help
-
-
-def show_help():
-    print("\nHELP\n")
-    print_orange("usage: python3 portscanner.py <ip> <port>\n")
-
-
-# Main function
 def main():
     args = sys.argv
 
@@ -26,4 +18,5 @@ def main():
         show_help()
 
 
-main()
+if __name__ == "__main__":
+    main()
